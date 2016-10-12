@@ -36,6 +36,7 @@ Now let's add Facebook login support with Omniauth.
 
 Add omniauth-facebook to your Gemfile:
 
+		gem 'omniauth'
     gem 'omniauth-facebook'
 
 We'll also need to store two more columns in our user model: a `provider` string (which will always be `'facebook'` or `nil` in our app for the moment), and a `uid`, the user's authenticated Facebook ID.
@@ -118,3 +119,5 @@ Your Rails server must be run from the same shell window/tab as where you set yo
 [fbdev]: https://developer.facebook.com
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/devise_lab'>Devise Lab</a> on Learn.co and start learning to code for free.</p>
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/devise_lab'>Devise Lab</a> on Learn.co and start learning to code for free.</p>
