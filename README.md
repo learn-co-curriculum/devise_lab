@@ -60,7 +60,8 @@ Add this line to your `user.rb` to enable omniauth:
 
 And add this line to your welcome view:
 
-     <%= link_to "Sign in with Facebook", user_facebook_omniauth_authorize_path %>
+      <%= link_to "Sign in with Facebook",  user_omniauth_authorize_path(provider: "facebook") %>
+
 
 If you visit the welcome page and click "Sign in with Facebook," you should be able to go through a Facebook application authorization flow.
 
